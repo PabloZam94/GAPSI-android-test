@@ -36,7 +36,7 @@ class SearchViewModel(
     private val query = savedStateHandle.getStateFlow(KEY_QUERY, "")
 
     private val searchRequest = MutableStateFlow(
-        SearchRequest(term = savedStateHandle[KEY_SUBMITTED_QUERY] ?: "", generation = 0L),
+        SearchRequest(term = savedStateHandle.get<String>(KEY_SUBMITTED_QUERY).orEmpty(), generation = 0L),
     )
 
     /** Survives configuration changes thanks to [cachedIn]; previous searches are cancelled. */
