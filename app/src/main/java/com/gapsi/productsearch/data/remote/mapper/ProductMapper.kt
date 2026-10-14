@@ -1,5 +1,6 @@
 package com.gapsi.productsearch.data.remote.mapper
 
+import com.gapsi.productsearch.data.remote.dto.PriceDetailsDto
 import com.gapsi.productsearch.data.remote.dto.ProductDto
 import com.gapsi.productsearch.data.remote.dto.SearchResponseDto
 import com.gapsi.productsearch.domain.model.Product
@@ -43,6 +44,7 @@ internal class ProductMapper(private val json: Json) {
         val resolvedPrice = price?.takeIf { it > 0.0 }
             ?: priceInfo?.currentPrice?.price?.takeIf { it > 0.0 }
             ?: priceInfo?.currentPrice?.priceString?.parsePrice()
+            ?: priceInfo?.priceDetails?.currentPriceValue()?.parsePrice()
             ?: priceInfo?.linePrice?.parsePrice()
 
         val thumbnail = imageInfo?.thumbnailUrl?.takeIf { it.isNotBlank() }
@@ -56,7 +58,16 @@ internal class ProductMapper(private val json: Json) {
         )
     }
 
+    private fun PriceDetailsDto.currentPriceValue(): String? =
+        priceLines.firstOrNull { it.lineType == LINE_TYPE_CURRENT_PRICE }
+            ?.values
+            ?.firstOrNull { it.key == VALUE_KEY_PRICE }
+            ?.value
+
     private companion object {
+        const val LINE_TYPE_CURRENT_PRICE = "CURRENT_PRICE"
+        const val VALUE_KEY_PRICE = "PRICE"
+
         private val NON_NUMERIC = Regex("[^0-9.]")
 
         /** "$1,299.00" -> 1299.0 ; "From $5.98" -> 5.98 */

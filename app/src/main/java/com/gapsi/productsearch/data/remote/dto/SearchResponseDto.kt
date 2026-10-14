@@ -64,6 +64,23 @@ data class ImageInfoDto(val thumbnailUrl: String? = null)
 data class PriceInfoDto(
     val linePrice: String? = null,
     val currentPrice: CurrentPriceDto? = null,
+    val priceDetails: PriceDetailsDto? = null,
+)
+
+/** e.g. priceLines: [{ lineType: "CURRENT_PRICE", values: [{ key: "PRICE", value: "499.00" }] }] */
+@Serializable
+data class PriceDetailsDto(val priceLines: List<PriceLineDto> = emptyList())
+
+@Serializable
+data class PriceLineDto(
+    val lineType: String? = null,
+    val values: List<PriceValueDto> = emptyList(),
+)
+
+@Serializable
+data class PriceValueDto(
+    val key: String? = null,
+    val value: String? = null,
 )
 
 @Serializable

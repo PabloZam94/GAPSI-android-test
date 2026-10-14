@@ -1,0 +1,217 @@
+{
+  "responseStatus": "PRODUCT_FOUND_RESPONSE",
+  "responseMessage": "Product successfully found!",
+  "sortStrategy": "best_match",
+  "domainCode": "com",
+  "keyword": "nintendo",
+  "item": {
+    "props": {
+      "pageProps": {
+        "initialData": {
+          "searchResult": {
+            "title": "Results for \"nintendo\"",
+            "aggregatedCount": 26634,
+            "itemStacks": [
+              {
+                "title": "Results for \"nintendo\"",
+                "layoutEnum": "GRID",
+                "items": [
+                  {
+                    "__typename": "Product",
+                    "id": "2ZGRGZ46D361",
+                    "usItemId": "15949610846",
+                    "name": "Nintendo Switch™ 2 System",
+                    "price": 499.0,
+                    "image": "https://i5.walmartimages.com/seo/Nintendo-Switch-2-System_e54b513c-cf10-44a5-8a78-14a5f70644a8.dca71e01a5172a18dbc2bc689f959469.jpeg?odnHeight=180&odnWidth=180&odnBg=FFFFFF",
+                    "imageInfo": {
+                      "thumbnailUrl": "https://i5.walmartimages.com/seo/Nintendo-Switch-2-System_e54b513c-cf10-44a5-8a78-14a5f70644a8.dca71e01a5172a18dbc2bc689f959469.jpeg?odnHeight=180&odnWidth=180&odnBg=FFFFFF"
+                    },
+                    "priceInfo": {
+                      "itemPrice": "",
+                      "linePrice": "",
+                      "wasPrice": "",
+                      "unitPrice": "",
+                      "shipPrice": "",
+                      "minPriceForVariant": "",
+                      "subscriptionPrice": "",
+                      "subscriptionString": "",
+                      "priceDisplayCondition": "",
+                      "finalCostByWeight": false,
+                      "submapType": "",
+                      "priceRangeString": "",
+                      "linePriceDisplay": "",
+                      "wasPriceSupportText": "",
+                      "memberPriceString": "",
+                      "subscriptionDiscountPrice": "",
+                      "priceDisplayType": null,
+                      "eaPricingPreText": "",
+                      "subscriptionPercentage": null,
+                      "savingsAmt": 0,
+                      "minPrice": 0,
+                      "priceDetails": {
+                        "currency": "USD",
+                        "priceLines": [
+                          {
+                            "lineType": "CURRENT_PRICE",
+                            "values": [
+                              {
+                                "key": "PRICE",
+                                "value": "499.00"
+                              }
+                            ]
+                          },
+                          {
+                            "lineType": "OPTIONS",
+                            "values": [
+                              {
+                                "key": "LOW_PRICE",
+                                "value": "489.00"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "savings": "",
+                      "subscriptionDualPrice": null,
+                      "eaPricingText": ""
+                    },
+                    "type": "REGULAR",
+                    "canonicalUrl": "/ip/Nintendo-Switch-2-System/15949610846?classType=REGULAR&athbdg=L1103",
+                    "averageRating": 4.6,
+                    "numberOfReviews": 11811
+                  },
+                  {
+                    "__typename": "AdPlaceholder",
+                    "hasVideo": null,
+                    "adUuid": null,
+                    "tileOptions": null,
+                    "lazy": "0",
+                    "moduleInfo": null,
+                    "hasAd": false,
+                    "videoAdType": null,
+                    "type": "MarqueeDisplayAd",
+                    "moduleLocation": "marquee1"
+                  },
+                  {
+                    "__typename": "Product",
+                    "id": "35OONFAPROQO",
+                    "usItemId": "270279678",
+                    "name": "Restored Nintendo Switch Console with Neon Blue & Red Joy-Con. (Refurbished)",
+                    "price": 194.8,
+                    "image": "https://i5.walmartimages.com/asr/afdb71df-4810-4e3e-9c3c-187e88a98619_1.9abc0f91d776fcbf0b8b580e875ed6c0.jpeg",
+                    "imageInfo": {
+                      "thumbnailUrl": "https://i5.walmartimages.com/asr/afdb71df-4810-4e3e-9c3c-187e88a98619_1.9abc0f91d776fcbf0b8b580e875ed6c0.jpeg"
+                    },
+                    "priceInfo": {
+                      "itemPrice": "",
+                      "linePrice": "",
+                      "wasPrice": "",
+                      "unitPrice": "",
+                      "shipPrice": "",
+                      "minPriceForVariant": "",
+                      "subscriptionPrice": "",
+                      "subscriptionString": "",
+                      "priceDisplayCondition": "",
+                      "finalCostByWeight": false,
+                      "submapType": "",
+                      "priceRangeString": "",
+                      "linePriceDisplay": "",
+                      "wasPriceSupportText": "",
+                      "memberPriceString": "",
+                      "subscriptionDiscountPrice": "",
+                      "priceDisplayType": null,
+                      "eaPricingPreText": "",
+                      "subscriptionPercentage": null,
+                      "savingsAmt": 0,
+                      "minPrice": 0,
+                      "priceDetails": {
+                        "currency": "USD",
+                        "priceLines": [
+                          {
+                            "lineType": "CURRENT_PRICE",
+                            "values": [
+                              {
+                                "key": "PRICE",
+                                "value": "194.80"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "savings": "",
+                      "subscriptionDualPrice": null,
+                      "eaPricingText": ""
+                    },
+                    "type": "REGULAR",
+                    "canonicalUrl": "/ip/Restored-Nintendo-Switch-Console-with-Neon-Blue-Red-Joy-Con-Refurbished/270279678?conditionGroupCode=2&classType=REGULAR&athbdg=L1103",
+                    "averageRating": 3.6,
+                    "numberOfReviews": 329
+                  },
+                  {
+                    "__typename": "Product",
+                    "id": "6BPLXYXNBBYF",
+                    "usItemId": "943984255",
+                    "name": "Pikmin 3 Deluxe- Nintendo Switch [Digital]",
+                    "price": 41.97,
+                    "image": "https://i5.walmartimages.com/seo/Pikmin-3-Deluxe-Nintendo-Switch-Digital_6b95fd29-f64d-406b-b170-430763aa9031.1e46c11942b16fb6ef8873d3ad2a0099.jpeg",
+                    "imageInfo": {
+                      "thumbnailUrl": "https://i5.walmartimages.com/seo/Pikmin-3-Deluxe-Nintendo-Switch-Digital_6b95fd29-f64d-406b-b170-430763aa9031.1e46c11942b16fb6ef8873d3ad2a0099.jpeg"
+                    },
+                    "priceInfo": {
+                      "itemPrice": "",
+                      "linePrice": "",
+                      "wasPrice": "",
+                      "unitPrice": "",
+                      "shipPrice": "",
+                      "minPriceForVariant": "",
+                      "subscriptionPrice": "",
+                      "subscriptionString": "",
+                      "priceDisplayCondition": "",
+                      "finalCostByWeight": false,
+                      "submapType": "",
+                      "priceRangeString": "",
+                      "linePriceDisplay": "",
+                      "wasPriceSupportText": "",
+                      "memberPriceString": "",
+                      "subscriptionDiscountPrice": "",
+                      "priceDisplayType": null,
+                      "eaPricingPreText": "",
+                      "subscriptionPercentage": null,
+                      "savingsAmt": 0,
+                      "minPrice": 0,
+                      "priceDetails": {
+                        "currency": "USD",
+                        "priceLines": [
+                          {
+                            "lineType": "CURRENT_PRICE",
+                            "values": [
+                              {
+                                "key": "PRICE",
+                                "value": "41.97"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "savings": "",
+                      "subscriptionDualPrice": null,
+                      "eaPricingText": ""
+                    },
+                    "type": "REGULAR",
+                    "canonicalUrl": "/ip/Pikmin-3-Deluxe-Nintendo-Switch-Digital/943984255?classType=REGULAR",
+                    "averageRating": 4.6,
+                    "numberOfReviews": 8
+                  }
+                ]
+              }
+            ],
+            "paginationV2": {
+              "maxPage": 14
+            },
+            "hasMorePages": false
+          }
+        }
+      }
+    }
+  }
+}

@@ -66,4 +66,35 @@ class ProductMapperTest {
         assertTrue(page.products.isEmpty())
         assertNull(page.totalPages)
     }
+
+    @Test
+    fun `maps a real Axesso response captured from the API`() {
+        val page = mapper.map(
+            testJson.decodeFromString(SearchResponseDto.serializer(), readResource("walmart_nintendo_page1.json")),
+        )
+
+        assertEquals(listOf("15949610846", "270279678", "943984255"), page.products.map(Product::id))
+        assertEquals(14, page.totalPages)
+
+        val first = page.products.first()
+        assertEquals("Nintendo Switch™ 2 System", first.title)
+        assertEquals(499.0, first.price!!, 0.0)
+        assertTrue(first.thumbnailUrl!!.startsWith("https://i5.walmartimages.com/"))
+    }
+
+    @Test
+    fun `uses priceDetails current price when plain price is missing`() {
+        val json = """
+            {"item":{"props":{"pageProps":{"initialData":{"searchResult":{"itemStacks":[{"items":[
+              {"usItemId":"1","name":"Item","priceInfo":{"linePrice":"","priceDetails":{"priceLines":[
+                {"lineType":"OPTIONS","values":[{"key":"LOW_PRICE","value":"1.00"}]},
+                {"lineType":"CURRENT_PRICE","values":[{"key":"PRICE","value":"499.00"}]}
+              ]}}}
+            ]}]}}}}}}
+        """.trimIndent()
+
+        val page = mapper.map(testJson.decodeFromString(SearchResponseDto.serializer(), json))
+
+        assertEquals(499.0, page.products.single().price!!, 0.0)
+    }
 }
