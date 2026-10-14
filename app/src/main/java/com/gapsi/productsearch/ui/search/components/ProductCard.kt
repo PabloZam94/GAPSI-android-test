@@ -91,7 +91,8 @@ private fun ProductThumbnail(
     url: String?,
     modifier: Modifier = Modifier,
 ) {
-    val placeholder = ColorPainter(MaterialTheme.colorScheme.surfaceVariant)
+    val placeholderColor = MaterialTheme.colorScheme.surfaceVariant
+    val placeholder = remember(placeholderColor) { ColorPainter(placeholderColor) }
     AsyncImage(
         model = ImageRequest.Builder(LocalPlatformContext.current)
             .data(url)
