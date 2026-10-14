@@ -29,7 +29,7 @@
     <string name="error_missing_api_key">No se configuró la API key. Agrega RAPIDAPI_KEY en local.properties y vuelve a compilar.</string>
     <string name="error_unauthorized">La API key no es válida o no tiene acceso al servicio.</string>
     <string name="error_rate_limited">Se alcanzó el límite de consultas de la API. Espera un momento e inténtalo de nuevo.</string>
-    <string name="error_server">El servicio no está disponible en este momento (código %1$d).</string>
+    <string name="error_server">El servicio respondió con un error (código %1$d). Inténtalo más tarde.</string>
     <string name="error_unexpected_response">El servicio respondió con un formato inesperado.</string>
     <string name="error_unknown">Ocurrió un error inesperado.</string>
 </resources>
