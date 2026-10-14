@@ -1,3 +1,35 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">GAPSI Store</string>
+
+    <!-- Search -->
+    <string name="search_placeholder">Buscar productos (ej. nintendo, sony)</string>
+    <string name="search_clear">Limpiar búsqueda</string>
+    <string name="search_icon">Buscar</string>
+
+    <!-- History -->
+    <string name="history_title">Búsquedas recientes</string>
+    <string name="history_clear_all">Borrar todo</string>
+    <string name="history_remove_item">Eliminar «%1$s» del historial</string>
+
+    <!-- States -->
+    <string name="state_welcome_title">¿Qué estás buscando?</string>
+    <string name="state_welcome_message">Escribe el nombre de un producto o una marca para explorar el catálogo.</string>
+    <string name="state_empty_title">Sin resultados</string>
+    <string name="state_empty_message">No encontramos productos para «%1$s». Prueba con otra palabra, de preferencia en inglés.</string>
+    <string name="state_error_title">Algo salió mal</string>
+    <string name="state_end_of_list">No hay más productos</string>
+    <string name="action_retry">Reintentar</string>
+
+    <!-- Product -->
+    <string name="product_price_unavailable">Precio no disponible</string>
+
+    <!-- Errors -->
+    <string name="error_no_connection">Sin conexión a internet. Revisa tu red e inténtalo de nuevo.</string>
+    <string name="error_timeout">El servidor tardó demasiado en responder. Inténtalo de nuevo.</string>
+    <string name="error_missing_api_key">No se configuró la API key. Agrega RAPIDAPI_KEY en local.properties y vuelve a compilar.</string>
+    <string name="error_unauthorized">La API key no es válida o no tiene acceso al servicio.</string>
+    <string name="error_rate_limited">Se alcanzó el límite de consultas de la API. Espera un momento e inténtalo de nuevo.</string>
+    <string name="error_server">El servicio no está disponible en este momento (código %1$d).</string>
+    <string name="error_unexpected_response">El servicio respondió con un formato inesperado.</string>
+    <string name="error_unknown">Ocurrió un error inesperado.</string>
 </resources>
