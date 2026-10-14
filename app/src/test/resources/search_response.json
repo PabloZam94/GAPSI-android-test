@@ -1,0 +1,76 @@
+{
+  "responseStatus": "PRODUCT_FOUND_RESPONSE",
+  "responseMessage": "Product successfully found!",
+  "keyword": "nintendo",
+  "page": 1,
+  "item": {
+    "props": {
+      "pageProps": {
+        "initialData": {
+          "searchResult": {
+            "itemStacks": [
+              {
+                "title": "Results for \"nintendo\"",
+                "items": [
+                  {
+                    "__typename": "Product",
+                    "id": "5FA1B2",
+                    "usItemId": "493824815",
+                    "name": "  Nintendo Switch OLED Model w/ White Joy-Con  ",
+                    "price": 349.0,
+                    "image": "https://i5.walmartimages.com/full.jpeg",
+                    "imageInfo": { "thumbnailUrl": "https://i5.walmartimages.com/thumb.jpeg" },
+                    "priceInfo": { "linePrice": "$349.00" },
+                    "averageRating": 4.8
+                  },
+                  {
+                    "__typename": "AdPlaceholder",
+                    "adsKey": "sp-carousel"
+                  },
+                  {
+                    "__typename": "Product",
+                    "usItemId": "111",
+                    "name": "Mario Kart 8 Deluxe",
+                    "price": 0,
+                    "image": "http://i5.walmartimages.com/mario.jpeg",
+                    "priceInfo": { "currentPrice": { "price": 49.99, "priceString": "$49.99" } }
+                  },
+                  "unexpected-string-entry",
+                  {
+                    "__typename": "Product",
+                    "usItemId": "222",
+                    "name": "Pro Controller",
+                    "priceInfo": { "linePrice": "From $1,069.50" },
+                    "imageInfo": { "thumbnailUrl": "//i5.walmartimages.com/pro.jpeg" }
+                  },
+                  {
+                    "__typename": "Product",
+                    "usItemId": "333",
+                    "name": "Game with malformed price",
+                    "price": { "unexpected": true }
+                  }
+                ]
+              },
+              {
+                "title": "More results",
+                "items": [
+                  {
+                    "__typename": "Product",
+                    "usItemId": "493824815",
+                    "name": "Duplicated Nintendo Switch"
+                  },
+                  {
+                    "__typename": "Product",
+                    "id": "ABC",
+                    "name": "Amiibo"
+                  }
+                ]
+              }
+            ],
+            "paginationV2": { "maxPage": 25 }
+          }
+        }
+      }
+    }
+  }
+}
