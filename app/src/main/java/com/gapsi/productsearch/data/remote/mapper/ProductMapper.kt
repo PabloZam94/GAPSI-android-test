@@ -7,7 +7,6 @@ import com.gapsi.productsearch.domain.model.Product
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonElement
 
-/** One page of results already mapped to the domain model. */
 internal data class SearchPage(
     val products: List<Product>,
     val totalPages: Int?,

@@ -35,7 +35,6 @@ import com.gapsi.productsearch.ui.search.components.SearchField
 import com.gapsi.productsearch.ui.search.components.StatusMessage
 import org.koin.compose.viewmodel.koinViewModel
 
-/** Stateful entry point: wires the ViewModel to the stateless [SearchScreen]. */
 @Composable
 fun SearchRoute(
     modifier: Modifier = Modifier,

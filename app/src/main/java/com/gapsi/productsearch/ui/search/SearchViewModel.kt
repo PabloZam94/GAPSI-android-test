@@ -27,10 +27,6 @@ class SearchViewModel(
     private val savedStateHandle: SavedStateHandle,
 ) : ViewModel() {
 
-    /**
-     * Every submission gets a new [SearchRequest.generation], so searching the same term twice
-     * (e.g. after a failure) starts a fresh search instead of being swallowed by StateFlow equality.
-     */
     private data class SearchRequest(val term: String, val generation: Long)
 
     private val query = savedStateHandle.getStateFlow(KEY_QUERY, "")
@@ -39,7 +35,6 @@ class SearchViewModel(
         SearchRequest(term = savedStateHandle.get<String>(KEY_SUBMITTED_QUERY).orEmpty(), generation = 0L),
     )
 
-    /** Survives configuration changes thanks to [cachedIn]; previous searches are cancelled. */
     val products: Flow<PagingData<Product>> = searchRequest
         .flatMapLatest { request ->
             if (request.term.isBlank()) {

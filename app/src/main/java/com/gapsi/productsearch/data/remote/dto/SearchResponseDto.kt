@@ -3,14 +3,6 @@ package com.gapsi.productsearch.data.remote.dto
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.JsonElement
 
-/*
- * Axesso proxies Walmart's server-side rendered payload, which is huge and not formally versioned.
- * Only the fields the app needs are modelled; every field is optional so a missing node degrades
- * gracefully instead of failing the whole page.
- *
- * Path: item.props.pageProps.initialData.searchResult.{itemStacks[].items[], paginationV2.maxPage}
- */
-
 @Serializable
 data class SearchResponseDto(
     val responseStatus: String? = null,
@@ -67,7 +59,6 @@ data class PriceInfoDto(
     val priceDetails: PriceDetailsDto? = null,
 )
 
-/** e.g. priceLines: [{ lineType: "CURRENT_PRICE", values: [{ key: "PRICE", value: "499.00" }] }] */
 @Serializable
 data class PriceDetailsDto(val priceLines: List<PriceLineDto> = emptyList())
 

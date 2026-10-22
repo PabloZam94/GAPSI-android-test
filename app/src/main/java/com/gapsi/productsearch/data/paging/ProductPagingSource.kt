@@ -10,20 +10,11 @@ import kotlinx.coroutines.CancellationException
 import retrofit2.HttpException
 import java.net.HttpURLConnection
 
-/**
- * Page-number based [PagingSource] for the Walmart keyword search.
- *
- * - Pages start at [FIRST_PAGE] and only append (no prepend): results are an ordered feed.
- * - Pagination ends when the API reports the last page, returns an empty page or 404.
- * - Products repeated across pages are dropped, keeping `LazyColumn` keys unique.
- */
 internal class ProductPagingSource(
     private val api: WalmartSearchApi,
     private val mapper: ProductMapper,
     private val query: String,
 ) : PagingSource<Int, Product>() {
-
-    /** Paging guarantees loads on a single PagingSource never run concurrently. */
     private val seenIds = HashSet<String>()
 
     override suspend fun load(params: LoadParams<Int>): LoadResult<Int, Product> {
@@ -55,16 +46,11 @@ internal class ProductPagingSource(
         }
     }
 
-    /**
-     * Always restart from the first page on refresh. The feed is not positionally stable
-     * (best-match ranking may change between calls), so resuming mid-list is not meaningful.
-     */
     override fun getRefreshKey(state: PagingState<Int, Product>): Int? = null
 
     companion object {
         const val FIRST_PAGE = 1
 
-        /** Safety net in case the API never reports a last page. */
         const val MAX_PAGES = 50
     }
 }
